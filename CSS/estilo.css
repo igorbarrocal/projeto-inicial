@@ -16,9 +16,11 @@
     /*Exemplo de seletores*/
 
     /*Seletores de tipo*/
-    h1 {
-        color: red;
-        text-align: center;
+    h1, h2 {
+        color: black;
+        text-align: left;
+        font-family: serif;
+        background-color: blue;
     }
 
     #cabecalho{
@@ -27,9 +29,9 @@
         background-size: contain;
         background-position: center;
         background-size: cover;
+        background-color: blue;
     }
-
-
+       
     /*Seletores de classe*/
     .link {
         /* font-size: 24%; */
@@ -49,19 +51,18 @@
         }
 
         /*Nesting elements*/
-        a {
+      a {
             display: inline-block;
             text-decoration: none;
             color: #000;
+            font-weight: bold;
         
             /*Nesting elements*/
             img{
                 display: inline-block;
                 width: 25%;
             }
-
         }
-
     }
   
     /*Seletores de ID*/
@@ -69,3 +70,29 @@
         list-style-type: none;
         text-align: center;
     }
+    /* Estilo para todos os elementos da classe .container */
+    #container {
+        padding: 20px;
+    }
+
+    /* Estilo para o conteúdo dentro da seção com id conteudo */
+#conteudo {
+  line-height: 1.5;
+}
+    /* Estilo para o formulário de contato */
+form {
+    border: 1px solid grey;
+    padding: 10px;
+  }
+  p {
+    color: green;
+  }
+  /* Estilo para os botões dentro do formulário de contato */
+form button {
+    background-color: blue;
+    color: white;
+  }
+  /* Estilo para o rodapé */
+footer {
+    border-top: 2px solid red;
+  }

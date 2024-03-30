@@ -1,6 +1,3 @@
-
-
-
 /*Este é um comentário de linha!*/
 /*
     Este é um comentário de Bloco
@@ -16,11 +13,13 @@
     /*Exemplo de seletores*/
 
     /*Seletores de tipo*/
-    h1, h2 {
-        color: black;
-        text-align: left;
+    h1 {
+        color: red;
+        text-align: center;
         font-family: serif;
-        background-color: blue;
+    }
+    h2{
+        font-family: serif;
     }
 
     #cabecalho{
@@ -29,9 +28,9 @@
         background-size: contain;
         background-position: center;
         background-size: cover;
-        background-color: blue;
     }
-       
+
+
     /*Seletores de classe*/
     .link {
         /* font-size: 24%; */
@@ -51,11 +50,12 @@
         }
 
         /*Nesting elements*/
-      a {
+        a {
             display: inline-block;
             text-decoration: none;
             color: #000;
             font-weight: bold;
+}
         
             /*Nesting elements*/
             img{
@@ -64,27 +64,30 @@
             }
         }
     }
-  
     /*Seletores de ID*/
     #menu ul{
         list-style-type: none;
         text-align: center;
     }
-    /* Estilo para todos os elementos da classe .container */
-    #container {
-        padding: 20px;
-    }
-
-    /* Estilo para o conteúdo dentro da seção com id conteudo */
+    /* Estilo para o cabeçalho */
+header {
+    background-color: blue;
+  }
+/* Estilo para todos os elementos da classe .container */
+.container {
+    padding: 20px;
+  }
+  /* Estilo para o conteúdo dentro da seção com id conteudo */
 #conteudo {
-  line-height: 1.5;
-}
-    /* Estilo para o formulário de contato */
+    line-height: 1.5;
+  }
+  /* Estilo para o formulário de contato */
 form {
     border: 1px solid grey;
     padding: 10px;
   }
-  p {
+  /* Estilo para os parágrafos */
+p {
     color: green;
   }
   /* Estilo para os botões dentro do formulário de contato */

@@ -1,101 +1,74 @@
-/*Este é um comentário de linha!*/
-/*
-    Este é um comentário de Bloco
-!*/
-
-/*Anatomia de uma regra CSS*/
-/*
-    Seletor {
-        Propriedade: Valor;
-    }
-*/
-
-    /*Exemplo de seletores*/
-
-    /*Seletores de tipo*/
-    h1 {
-        color: red;
-        text-align: center;
-        font-family: serif;
-    }
-    h2{
-        font-family: serif;
-    }
-
-    #cabecalho{
-        background-image: url("../img/banner.jpg");
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        background-size: cover;
-    }
-
-
-    /*Seletores de classe*/
-    .link {
-        /* font-size: 24%; */
-        /* font-size: 24em; */
-        /* font-size: 24rem; */
-        /* font-size: 24vw; */
-        border: 2px solid #ff0000;
-        display: inline-block;
-        margin: 0 2%;
-        background-color: rgba(255, 0, 0, 0.200);
-        padding: 5px 5px;
-        width: 15%;
-        transition: all 0.4s  ease-out;
-
-        &:hover {
-            background-color: rgba(255, 0, 0, 0.500);
-        }
-
-        /*Nesting elements*/
-        a {
-            display: inline-block;
-            text-decoration: none;
-            color: #000;
-            font-weight: bold;
+h1 {
+    text-align: center;
+    font-family: serif;
 }
-        
-            /*Nesting elements*/
-            img{
-                display: inline-block;
-                width: 25%;
-            }
+h2 {
+    font-family: serif;
+}
+#cabecalho{
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-size: cover;
+    background-color: blue;
+}
+
+
+/*Seletores de classe*/
+.link {
+    /* font-size: 24%; */
+    /* font-size: 24em; */
+    /* font-size: 24rem; */
+    /* font-size: 24vw; */
+    
+    display: inline-block;
+    margin: 0 2%;
+    
+    padding: 5px 5px;
+    width: 15%;
+    transition: all 0.4s  ease-out;
+
+    &:hover {
+        background-color: rgba(255, 0, 0, 0.500);
+    }
+
+    /*Nesting elements*/
+    a {
+        display: inline-block;
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+        /*Nesting elements*/
+        img{
+            display: inline-block;
+            width: 25%;
         }
     }
-    /*Seletores de ID*/
-    #menu ul{
-        list-style-type: none;
-        text-align: center;
-    }
-    /* Estilo para o cabeçalho */
-header {
-    background-color: blue;
-  }
-/* Estilo para todos os elementos da classe .container */
+}
+
+#menu ul{
+    list-style-type: none;
+    text-align: center;
+}
 .container {
     padding: 20px;
-  }
-  /* Estilo para o conteúdo dentro da seção com id conteudo */
+}
+
 #conteudo {
     line-height: 1.5;
-  }
-  /* Estilo para o formulário de contato */
+}
+
 form {
     border: 1px solid grey;
     padding: 10px;
-  }
-  /* Estilo para os parágrafos */
+}
 p {
     color: green;
-  }
-  /* Estilo para os botões dentro do formulário de contato */
+}
 form button {
     background-color: blue;
     color: white;
-  }
-  /* Estilo para o rodapé */
+}
 footer {
     border-top: 2px solid red;
-  }
+}
